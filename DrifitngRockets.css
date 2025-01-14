@@ -52,15 +52,16 @@ html, body {
     height: 100%;
     margin: 0;
     overflow: hidden;  
+	font-family: "Work Sans", serif;
 }
 
 
-
+*{font-family: "Work Sans", serif;}
 /* This is a divider for my work and reset values*/
 
 p{
 color: white;
-font-family: 'AG Old Face Medium', sans-serif;
+
 
 }
 
@@ -162,11 +163,9 @@ img{
 
 #one{
 	padding-right: 86px;
-	font-family: 'AG Old Face';
 }
 
 .gases{
-	font-family: 'AG Old Face Medium', sans-serif;
 	font-size: 12px;
 }
 
