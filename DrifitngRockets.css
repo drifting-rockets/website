@@ -1,217 +1,59 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+* {
+	font-family: "Text Me One", serif;
+	font-weight: 400;
+	font-style: normal;
 }
 
-
-html, body {
-    height: 100%;
-    margin: 0;
-    overflow: hidden;  
-	font-family: "Work Sans", serif;
+body,
+html {
+	min-height: 100vh;
 }
 
-
-*{font-family: "Work Sans", serif;}
-/* This is a divider for my work and reset values*/
-
-p{
-color: white;
-
-
+.hero {
+	height: 100vh;
+	position: relative;
+	background-color: black;
 }
 
-
-
-.flex-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	height: 99vh;
-	
+.layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
-.flex-container2{
-	display: flex;
-	gap: 18px;
+.layer-video video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
 }
 
-.flex-container3{
-	display: flex;
-	justify-content: space-between;
-}
-.background-video{
-    top: 0%;
-    left: 0%;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    z-index: -1;
-    
-
+.navbar h3, .game-logo {
+	font-family: "Cairo Play", serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-variation-settings:
+		"slnt" 0;
 }
 
-#bottom-content{
-	padding-left: 50px;
-	padding-bottom: 200px;
+#number {
+	font-size: 48px;
+	line-height: 120%;
 }
 
-
-#number{
-	font-size: 80px;
-	padding-block: 10px;
-	
-	
+.ee-logo {
+	width: 300px;
 }
 
-#description{
-	padding-left: 50px;
-	padding-top: 50px;
-	line-height: 20px;
-	
+.mw-500 {
+	max-width: 600px;
 }
 
-#icon{
-	height: 30px;
-	width: 30px;
-
-}
-.border{
-    border-top: 2px ; 
-	width: 150px;
-	border-color: rgb(51, 51, 51);
-	border-style: solid;
-    padding-top: 30px; 
-}
-
-.border2{
-    border-top: 2px ; 
-	width: 150px;
-	border-color: rgb(51, 51, 51);
-	border-style: solid;
-    padding-top: 40px; 
-	text-align: center;
-}
-
-
-.arc {
-    border-style: solid;
-    border-color: rgb(54, 54, 54);
-    border-radius: 50%;
-    border-width: 1.5px;
-    width: 150vh; 
-    height: 147vh; 
-    position: absolute;
-    right: -20vw; 
-    top: -32vh;
-}
-
-
-
-img{
-	width: 237px;
-     height: auto;
-	
-	
-
-}
-
-#one{
-	padding-right: 86px;
-}
-
-.gases{
-	font-size: 12px;
-}
-
-
-/* Media Queries for Mobile Screens */
-@media only screen and (max-width: 575px) {
-
-	html, body {
-		height: 100%;
-		margin: 0;
-		font-size: 14px;
-		overflow: hidden;  
-	}
-    #number {
-        font-size: 40px; /* Adjust font size for mobile */
-    }
-
-    #description {
-        padding-left: 15px; /* Reduce padding for mobile */
-        padding-top: 50px; /* Reduce padding for mobile */
-    }
-	#bottom-content{
-		padding-left: 15px;
-		padding-bottom: 130px;
-	}
-    .arc {
-		width: 150vh; 
-		height: 135vh; 
-        left: 210px; 
-		top: -22vh;
-      
-    }
-	.border2{
-		border-top: 2px ; 
-		width: 50px;
-		border-color: rgb(51, 51, 51);
-		border-style: solid;
-		padding-top: 60px; 
-		font-size: 12px;
-
-	}
-    
-
-	.gases{
-		margin-left: 30px;
-		font-size: 12px;
-	}
-    
+.game-logo {
+	letter-spacing: 3px;
+	font-size: 32px;
 }
